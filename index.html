@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <nav id="hidden">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <div class="first">
+                <h1>
+                    Hello, I'm <span>Kabir Adeyemo</span>. <br />
+                    I'm a full-stack web developer.
+                </h1>
+                <button class="view">
+                    <a href="#portfolio" class="work">View my work
+                        <img class="arrow" src="./icons/right-arrow.png" alt="view my work" /></a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <nav id="show">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <div class="wrapper">
+                <h2>About</h2>
+                <div class="collection">
+                    <div class="fast flex-item">
+                        <div class="icon">
+                            <img src="./icons/deadline.png" alt="fast" />
+                        </div>
+                        <h3>Fast</h3>
+                        <p>
+                            Fast load pages and lag free information my highest priority.
+                        </p>
+                    </div>
+                    <div class="responsive flex-item">
+                        <div class="icon">
+                            <img src="./icons/responsive.png" alt="responsive" />
+                        </div>
+                        <h3>Responsive</h3>
+                        <p>My layout will work on any devices big or small.</p>
+                    </div>
+                    <div class="intuitive flex-item">
+                        <div class="icon">
+                            <img src="./icons/lightbulb.png" alt="intuitive" />
+                        </div>
+                        <h3>Intuitive</h3>
+                        <p>Strong preference for easy to use intuitive UX/UI.</p>
+                    </div>
+                    <div class="dynamic flex-item">
+                        <div class="icon">
+                            <img src="./icons/rocket.png" alt="dynamic" />
+                        </div>
+                        <h3>Dynamic</h3>
+                        <p>
+                            Websites don't have to be static, I love making pages come to
+                            life.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-holder">
+                    <div class="image">
+                        <img src="./images/myPic.jpeg" alt="my image" />
+                        <h3>Who's this guy ?</h3>
+                        <p>
+                           I am Front-End Developer from Abeokuta, Ogun state. I have serious passion for creating dynamic and intuitive user experiences.<br><span><strong>Let's make something special today.</strong></span>
+                        </p>
+                    </div>
+                    <div class="bar">
+                        <div class="html">80%</div>
+                        <div class="css">70%</div>
+                        <div class="javascript">50%</div>
+                        <div class="react">20%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio-wrap">
+                <h2>PROJECTS</h2>
+                <div class="photo">
+                    <img src="./images/1.jpg" alt="" />
+                    <img src="./images/2.jpg" alt="" />
+                    <img src="./images/3.jpg" alt="" />
+                    <img src="./images/4.jpg" alt="" />
+                    <img src="./images/5.jpg" alt="" />
+                    <img src="./images/6.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Have a question or want to work together?</p>
+                <div class="form">
+                    <form action="get">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name" /> <br>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Enter email" /> <br>
+                        <textarea name="text" id="text-area" cols="30" rows="10" placeholder="Your Message"></textarea> <br>
+                        <button class="summit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="up">
+                    <a href="#home"><img src="./images/up-arrow.png" alt="go to home"/></a>
+                </div>
+                <div class="social">
+                    <a href="http://linkedin.com/in/kabir-adeyemo"><img src="./icons/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.facebook.com/kaybeetunex"><img src="./icons/facebook-app-symbol.png" alt="Facebook" /></a>
+                    <a href="https://twitter.com/iamKayluv"><img src="./icons/twitter-sign.png" alt="Twitter" /></a>
+                    <a href="https://github.com/Don2kay"><img src="./icons/github-sign.png" alt="Github" /></a>
+                </div>
+                <p>Copyright &copy; 2022 | Kabir Adeyemo</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

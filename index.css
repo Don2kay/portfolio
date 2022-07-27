@@ -1,0 +1,399 @@
+/* General styling starts here */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --bar-color: orange;
+    --bar-text-color: black;
+  }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1500px;
+}
+
+#home {
+    background: url(./images/pexels-daria-shevtsova-2029159.jpg) no-repeat black;
+    width: 100%;
+    height: 650px;
+}
+
+.container{
+    margin: 0 40px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+/* General styling ends here */
+
+/* Home styling starts here */
+#home {
+    height: 720px;
+}
+
+.first {
+    color: white;
+    margin: 90px 0;
+    padding: 90px 50px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#hidden {
+    display: none;
+}
+
+.first h1 {
+    animation: slideInTop 2s ease-in-out;
+}
+
+.first .view {
+    animation: slideInBottom 2s ease-in-out;
+}
+
+span {
+    color: rgb(190, 26, 53);
+}
+
+.view {
+    background: url(./images/pexels-daria-shevtsova-2029159.jpg) no-repeat black;
+    border: 2px solid white;
+    color: white;
+    padding: 12px;
+}
+
+.arrow {
+    width: 13px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+.work {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+/* Home styling ends here */
+
+/* Navigation bar styling starts here */
+#show {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 20px 70px;
+    box-shadow: 2px 5px 5px rgba(255, 166, 0, .5);
+    z-index: 1000;
+}
+
+#show a {
+    color: white;
+    font-size: 18px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#show a:hover {
+    color: rgb(190, 26, 53);
+    transition: all 1s;
+    font-weight: 1000;
+}
+
+/* Navigation bar styling ends here */
+
+/* General styling for all H2 */
+h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+    background-color: black;
+}
+
+.wrapper, .portfolio-wrap, .contact {
+    padding-top: 85px;
+}
+
+/* About section styling starts here */
+
+#about {
+    background-color: beige;
+    z-index: 100;
+}
+
+.collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.flex-item {
+    width: 200px;
+}
+
+.icon img {
+    width: 200px;
+    height: auto;
+    padding: 40px;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: orange;
+    transition: all ease-out 2s;
+}
+
+.icon:hover {
+    background-color: white;
+    border: 2px solid orange;
+    cursor: pointer;
+    border-radius: 30%;
+    transform:scale(0.7);
+}
+
+.image-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.image {
+    text-align: center;
+    width: 45%;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.image img {
+    height: 350px;
+    width: 350px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.bar {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 55%;
+    padding-left: 50px;
+    padding-top: 50px;
+    color: white;
+    animation: slideInRight 2s ease-in-out;
+}
+
+.html, .css, .javascript, .react {
+    background-color: white;
+    margin-top: 10px;
+    width: 500px;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+    color: var(--bar-text-color);
+    border: 2px solid orange;
+}
+
+.html::after, .css::after, .javascript::after, .react::after {
+    background-color: var(--bar-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.html::after {
+    content: "HTML";
+    width: 85%;
+}
+
+.css::after {
+    content: "CSS";
+    width: 70%;
+}
+
+.javascript::after {
+    content: "JAVASCRIPT";
+    width: 50%;
+}
+
+.react::after {
+    content: "REACT";
+    width: 20%;
+}
+/* About styling ends here */
+
+/* Portfolio styling begins here */
+#portfolio {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+}
+
+.photo img {
+    width: 100%;
+    height: 350px;
+    align-self: center;
+    transition: all 1s ease-in-out;
+}
+
+.photo img:hover {
+    cursor: pointer;
+    transform: scale(.8)
+}
+
+/* Portfolio ends here */
+/* Styling for the contact section begins here */
+#contact {
+    background-color: rgb(32, 28, 29);
+    width: 100%;
+    height: 750px;
+    padding-bottom: 50px;
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 8%;
+    text-align: center;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.contact p {
+    font-size: 18px;
+    color: orange;
+    padding: 20px;
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+    margin: 3px;
+}
+
+#name, #email, #text-area {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 3px;
+}
+
+.summit {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    left: 205px;
+    padding: 10px 15px;
+}
+/* Contact section styling ends here */
+
+/* Footer styling begins here */
+footer {
+    background-color: beige;
+    padding-bottom: 20px;
+}
+
+.footer img {
+    color: white;
+    width: 60px;
+    height: auto;
+    padding: 10px;
+}
+
+.up {
+    width: 60px;
+    left: 650px;
+    padding: 0;
+    position: relative;
+    bottom: 35px;
+}
+/* Footer styling ends here */
+
+/* Animation starts here */
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-400px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

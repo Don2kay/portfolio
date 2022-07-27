@@ -1,0 +1,286 @@
+@media screen and (min-width: 1001px) {
+    body {
+    width: 100%;
+    }
+    #portfolio {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    
+    .photo {
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1000px) 
+{
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .first {
+        display: inline-block;
+        margin: 40px;
+        padding: 60px 20px;
+    }
+
+    .first .view {
+        animation: slideInRight 1s ease-in-out;
+    }
+
+    .collection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .flex-item {
+        align-items: center;
+    }
+
+    .image-holder {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bar {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .portfolio-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        width: auto;
+        padding: 0;
+    }
+
+    .photo img {
+        width: 300px;
+        height: auto;
+    }
+
+    .up {
+        width: 60px;
+        left: 300px;
+        padding: 0;
+        position: relative;
+        bottom: 35px;
+    }
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(300px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    #hidden {
+        display: flex;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        color: white;
+        padding: 20px 20px;
+        text-align: center;
+        box-shadow: 2px 5px 5px rgba(255, 166, 0, .5);
+        z-index: 1000;
+    }
+
+    #hidden a {
+        color: white;
+        font-size: 14px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    #hidden a:hover {
+        color: rgb(190, 26, 53);
+        transition: all 1s;
+        font-weight: 1000;
+    }
+
+    .container {
+        width: auto;
+        margin: 0 20px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .first {
+        display: block;
+        margin: 0;
+        padding: 60px 20px;
+    }
+
+    .first .view {
+        animation: slideInRight 1s ease-in-out;
+    }
+
+    #show {
+        display: none;
+    }
+
+    .collection {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .flex-item {
+        align-items: center;
+    }
+
+    .image-holder {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .image {
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .image img {
+        border: 2px solid orange;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        clip-path: none;
+    }
+
+    .bar {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .html,
+    .css,
+    .javascript,
+    .react {
+        background-color: orange;
+        color: black;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 7px;
+        text-align: right;
+        position: relative;
+    }
+
+    .html::after, .css::after, .javascript::after, .react::after {
+        background-color: var(--bar-color);
+        position: absolute;
+        left: 0px;
+        top: 0;
+        padding: 7px;
+        text-align: left;
+    }
+
+    .html::after {
+        content: "HTML";
+        width: 82%;
+    }
+
+    .css::after {
+        content: "CSS";
+        width: 70%;
+    }
+
+    .javascript::after {
+        content: "JAVASCRIPT";
+        width: 50%;
+    }
+
+    .react::after {
+        content: "REACT";
+        width: 20%;
+    }
+
+    .portfolio-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        width: 300px;
+        padding: 0;
+    }
+
+    .photo img {
+        width: 300px;
+        height: auto;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    input,
+    #text-area {
+        width: 300px;
+    }
+
+    .summit {
+        left: 105px;
+    }
+
+    .up {
+        display: none;
+    }
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(300px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
