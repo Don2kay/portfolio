@@ -314,9 +314,10 @@ input {
 }
 
 #name, #email, #text-area {
-    background-color: black;
+    background-color: #333;
     border: none;
     color: white;
+    font-weight: 500;
 }
 
 textarea {
