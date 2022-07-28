@@ -198,7 +198,8 @@
     .css,
     .javascript,
     .react {
-        background-color: orange;
+        background-color: white;
+        border: 2px solid orange;
         color: black;
         margin-top: 10px;
         display: flex;
